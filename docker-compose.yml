@@ -1,0 +1,31 @@
+version: '3'
+services:
+  board-api:
+    build: ./
+    # env_file: '.env'
+    environment:
+      - MONGO_URI=mongodb://database:27017/board
+    ports:
+      - '3000:3000'
+    networks:
+      - board-app
+    depends_on:
+      - database
+
+  database:
+    image: mongo
+    environment:
+      - MONGO_INITDB_DATABASE=board
+    ports:
+      - "27017:27017"
+    networks: 
+      - board-app
+    volumes:
+      - mongo-data:/data/db
+
+networks:
+  board-app:
+    driver: bridge
+volumes:
+  mongo-data:
+    driver: local
