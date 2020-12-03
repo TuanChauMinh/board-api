@@ -24,11 +24,20 @@ A page for managed all information related to a specific board.
 
 You can refer to Trello, Jira for the design and functionality. You are allowed to used any library for building this application.
 
+# Proposal
+
+If you don't want to build the kanban requirement above. You can submit your proposal here https://github.com/dinhhai281/board-api/issues, I will evaluating the complexity of it. When the complexity is approximately with the kanban board requirement it will be approve and you can implement it instead of the kanban board.
+
+Notes:
+- The proposal should show your angular skill not just redirect page to page and fetching data.
+- If it require back-end, you should submit back-end source code follow with instruction to run your application.
+
+
 ## Metrics
 
 ### Angular (30%)
 
-Angular will be the most imporant skill need to be proven. Aspect that will 
+Angular will be the most imporant skill need to be proven.
 
 - Angular fundamental (the usage of component, service, directive, form, ...)
 - Code organization.
